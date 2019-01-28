@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shitles</title>
+</head>
+<body>
+    
+    <textarea name = "" id = "#input" cols = "30" rows = "10" onkeyup = "updateWaarden();">
+        Dit is blabla leuk
+    </textarea> <br>
+
+aantal letters: <text name = "" id = "#input"> </text> <br>
+
+aantal woorden: <br>
+
+laatste woord: <br>
+
+'Syntra' komt voor: <br>
+
+<button onclick="upperCase();";>To Uppercase</button> <br>
+<button onclick="lowerCase();";>To Lowercase</button> <br>
+
+<script>
+var zin = "het is blabla leuk";
+var woorden = zin.split(" ");
+var aantalWoorden = woorden.length;
+var letters = zin.length;
+
+
+var input = document.querySelector("#input");
+function updateWaarden(){
+    var lengte = input.value.length;
+}
+
+function lowerCase(){
+zin.toLowerCase();
+}
+
+function upperCase(){
+zin.toUpperCase();
+}
+console.log(woorden);
+console.log(letters);
+console.log(woorden[3]);
+console.log(zin.toLowerCase());
+console.log(zin.toUpperCase());
+
+</script>
+
+
+
+</body>
+</html>
